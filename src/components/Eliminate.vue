@@ -143,6 +143,8 @@ export default {
   height: 40px;
   border: 1px solid #fff;
   animation: blockClean 1s;
+  background-position: center;
+  background-size: cover;
 }
 
 .cleared {
@@ -151,19 +153,19 @@ export default {
 }
 
 .red {
-  background: red;
+  background-image: url('../assets/bear.jpg');
 }
 
 .yellow {
-  background: yellow;
+  background-image: url('../assets/cat.jpg');
 }
 
 .blue {
-  background: blue;
+  background-image: url('../assets/chicken.jpg');
 }
 
 .green {
-  background: green;
+  background-image: url('../assets/snake.jpg');
 }
 
 .rule-text  {
