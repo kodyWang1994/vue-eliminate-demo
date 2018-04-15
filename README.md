@@ -1,6 +1,10 @@
 # vue-eliminate-demo
 
-> A Vue.js project
+> 使用Vue写的消消乐小游戏
+
+## 预览地址：
+
+https://kodywang1994.github.io/vue-eliminate-demo/dist/index.html#/
 
 ## Build Setup
 
