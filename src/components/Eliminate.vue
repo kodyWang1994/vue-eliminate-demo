@@ -153,19 +153,23 @@ export default {
 }
 
 .red {
-  background-image: url('../assets/bear.jpg');
+  /* background-image: url('../assets/bear.jpg'); */
+  background: red;
 }
 
 .yellow {
-  background-image: url('../assets/cat.jpg');
+  /* background-image: url('../assets/cat.jpg'); */
+  background: yellow;
 }
 
 .blue {
-  background-image: url('../assets/chicken.jpg');
+  /* background-image: url('../assets/chicken.jpg'); */
+  background: blue;
 }
 
 .green {
-  background-image: url('../assets/snake.jpg');
+  /* background-image: url('../assets/snake.jpg'); */
+  background: green;
 }
 
 .rule-text  {
