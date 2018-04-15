@@ -44,6 +44,9 @@ export default {
       setTimeout(() => {
         if (this.needCleanBlock.length >= 3) {
           this.cleaning(this.needCleanBlock)
+          let audio = new Audio()
+          audio.src = 'http://data.huiyi8.com/2017/gha/03/17/1702.mp3'
+          audio.play()
           this.source += this.needCleanBlock.length
         }
       }, 300)
