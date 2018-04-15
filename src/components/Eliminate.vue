@@ -153,23 +153,19 @@ export default {
 }
 
 .red {
-  /* background-image: url('../assets/bear.jpg'); */
-  background: red;
+  background-image: url('http://odotehbgw.bkt.clouddn.com/bear.jpg');
 }
 
 .yellow {
-  /* background-image: url('../assets/cat.jpg'); */
-  background: yellow;
+  background-image: url('http://odotehbgw.bkt.clouddn.com/cat.jpg');
 }
 
 .blue {
-  /* background-image: url('../assets/chicken.jpg'); */
-  background: blue;
+  background-image: url('http://odotehbgw.bkt.clouddn.com/chicken.jpg');
 }
 
 .green {
-  /* background-image: url('../assets/snake.jpg'); */
-  background: green;
+  background-image: url('http://odotehbgw.bkt.clouddn.com/snake.jpg');
 }
 
 .rule-text  {
