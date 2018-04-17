@@ -3,6 +3,7 @@
     <div class="game-panel">
       <div v-for="(row, i) in gamePanel" :key="row + i" class="row">
         <div v-for="(col, index) in row" :key="'col' + index" class="col" :class="blockColors[i + 1 + '' + col]" @click="cleanBlock(i + 1 + '' + col)">
+          {{ i + 1 + '' + col }}
         </div>
       </div>
     </div>
@@ -67,15 +68,18 @@ export default {
         return num % 10
       })
       for (const col in colBlock) {
-        let colMin = _.min(colBlock[col])
-        let colMax = _.max(colBlock[col])
-        let length = colMax - colMin === 0 ? 10 : colMax - colMin + 10
-        for (let i = colMin - 10; i > -100; i -= 10) {
-          if (i <= 10) {
-            this.fullBlock(i + length)
+        var colCleanValue = colBlock[col]
+        let colMax = _.max(colCleanValue)
+        var colValue = []
+        for (let i = colMax; i > 10; i -= 10) {
+          colValue.push(i)
+        }
+        var needDownBlocks = _.difference(colValue, colCleanValue)
+        for (const index in colValue) {
+          if (!_.isEmpty(needDownBlocks)) {
+            this.blockColors[colValue[index]] = this.blockColors[needDownBlocks.shift()]
           } else {
-            this.blockColors[i + length] = this.blockColors[i]
-            this.fullBlock(i)
+            this.fullBlock(colValue[index])
           }
         }
       }
@@ -148,6 +152,7 @@ export default {
   animation: blockClean 1s;
   background-position: center;
   background-size: cover;
+  transition-duration: .3s;
 }
 
 .cleared {
