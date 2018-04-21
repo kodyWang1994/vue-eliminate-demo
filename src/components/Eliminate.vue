@@ -3,7 +3,6 @@
     <div class="game-panel">
       <div v-for="(row, i) in gamePanel" :key="row + i" class="row">
         <div v-for="(col, index) in row" :key="'col' + index" class="col" :class="blockColors[i + 1 + '' + col]" @click="cleanBlock(i + 1 + '' + col)">
-          {{ i + 1 + '' + col }}
         </div>
       </div>
     </div>
